@@ -9,10 +9,11 @@ const BrandBar = observer(() => {
     return (
         <Row >
             {device.brands.map(brand =>
-                <Col
+                <Col 
                     style={{cursor:'pointer', backgroundColor:brand.id === device.selectedBrand.id ? '#0d6efd' : 'white'}}
                     key={brand.id}
-                    className="p-3"
+                    className="p-3 "
+                    
                     onClick={() => device.setSelectedBrand(brand)}
                 >
                     {brand.name}
