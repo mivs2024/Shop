@@ -7,7 +7,7 @@ const BrandBar = observer(() => {
     const {device} = useContext(Context)
 
     return (
-        <Row className="d-flex">
+        <Row >
             {device.brands.map(brand =>
                 <Col
                     style={{cursor:'pointer', backgroundColor:brand.id === device.selectedBrand.id ? '#0d6efd' : 'white'}}

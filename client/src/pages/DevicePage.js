@@ -12,9 +12,7 @@ import { fetchOneDevice } from "../http/deviceApi";
     
     useEffect(() => {
         fetchOneDevice(id).then(data => setDevice(data))
-        console.log(device)
     }, [])
-    console.log(device)
 
     return (
         <Container className="mt-3">
