@@ -7,7 +7,7 @@ import BrandBar from "../components/BrandBar";
 import DeviceList from "../components/DeviceList";
 import { fetchBrands, fetchDevices, fetchTypes } from "../http/deviceApi";
 import Pages from "../components/Pages";
-import CaruselItem from "../components/Carusel";
+import CaruselItem from "../components/CaruselItem";
 
 function Shop (){
   const {device} = useContext(Context)
@@ -35,10 +35,11 @@ function Shop (){
                     <TypeBar/>
                 </Col>
                 <Col md={9}>
-                   
+                    
                     <BrandBar/>
                     <DeviceList/>
                     <Pages/>
+                    <CaruselItem/>
                 </Col>
             </Row>
         </Container>
